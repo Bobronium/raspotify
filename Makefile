@@ -1,7 +1,7 @@
 .PHONY: all armhf arm64 amd64 riscv64 clean distclean
 .DEFAULT_GOAL := all
 
-RASPOTIFY_AUTHOR?=Kim Tore Jensen <kimtjen@gmail.com>
+RASPOTIFY_AUTHOR?=Kim Tore Jensen <kimtjen@gmail.com> (modified and built by Arseny Boykov <hi@bobronium.me>)
 
 armhf:
 	docker build -t raspotify .
