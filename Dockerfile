@@ -31,6 +31,7 @@ RUN dpkg --add-architecture arm64 \
         liblzma-dev \
         pkg-config \
         gettext-base \
+        libjack-dev \
     && rm -rf /var/lib/apt/lists/* \
     ;
 
