@@ -31,6 +31,7 @@ if [ "$1" = "purge" ]; then
 	# Delete any drop-in overrides.
 	rm -rf /etc/systemd/system/raspotify.service.d
 	rm -rf /etc/systemd/system/raspotify-crash-report-generator.service.d
+	rm -r /etc/dbus-1/system.d/raspotify.conf
 fi
 
 if [ -d /run/systemd/system ]; then
