@@ -31,6 +31,7 @@ else
 fi
 
 if [ -d /run/systemd/system ]; then
+	systemctl --system reload dbus.service || true
 	systemctl --system daemon-reload >/dev/null || true
 	deb-systemd-invoke start raspotify.service >/dev/null || true
 fi
